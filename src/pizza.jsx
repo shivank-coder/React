@@ -1,5 +1,4 @@
 import React from 'react';
-
 export const Pizza = (props) => {
   console.log(props.name);
 

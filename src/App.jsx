@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Pizza } from './pizza';
+import { Order } from './Order';
+import { Profile } from './profile/Profile';
 
 const App = () => {
   const [name, setName] = useState('');
@@ -20,12 +22,14 @@ const App = () => {
 
   return (
     <div>
-      <h1>Pizza App</h1>
+      {/* <h1>Pizza App</h1>
       <h1>Data we are getting from backend is: {message}</h1>
       <h2>
         Position of {name} is {position}
       </h2>
       <Pizza name="onion" />
+      <Order /> */}
+      <Profile />
     </div>
   );
 };

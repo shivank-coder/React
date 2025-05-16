@@ -1,0 +1,51 @@
+.profile {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 2rem;
+  background-color: #f7f7f7;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.profile form {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+}
+
+.profile input,
+.profile select {
+  margin-bottom: 1.2rem;
+  padding: 10px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border 0.3s ease;
+}
+
+.profile input:focus,
+.profile select:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+.profile button {
+  padding: 10px;
+  font-size: 15px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.profile button:hover {
+  background-color: #357ab8;
+}
