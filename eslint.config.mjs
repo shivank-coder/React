@@ -1,25 +1,23 @@
-import eslintPluginReact from "eslint-plugin-react";
-import eslintPluginPrettier from "eslint-plugin-prettier";
-import prettierConfig from "eslint-config-prettier";
+import react from '@eslint/js';
+import js from '@eslint/js';
+import reactPlugin from 'eslint-plugin-react';
 
 export default [
+  js.configs.recommended,
+  react.configs.recommended,
   {
-    files: ["**/*.js", "**/*.jsx"],
     languageOptions: {
-      ecmaVersion: 2021,
-      sourceType: "module",
-      globals: {
-        React: "readonly",
+      parserOptions: {
+        ecmaFeatures: {
+          jsx: true,
+        },
       },
     },
     plugins: {
-      react: eslintPluginReact,
-      prettier: eslintPluginPrettier,
+      react: reactPlugin,
     },
     rules: {
-      "prettier/prettier": "error",
-      "react/react-in-jsx-scope": "off",
+      'react/react-in-jsx-scope': 'off',
     },
   },
-  prettierConfig,
 ];
