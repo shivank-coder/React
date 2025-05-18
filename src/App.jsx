@@ -2,7 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { Pizza } from './pizza';
 import { Order } from './Order';
 import { Profile } from './profile/Profile';
-
+import { Hook } from './Hook';
+import { Hookchangedeverytime } from './Useffect';
+import { UserMap } from './UserMap';
 const App = () => {
   const [name, setName] = useState('');
   const [position, setPosition] = useState('');
@@ -29,7 +31,11 @@ const App = () => {
       </h2>
       <Pizza name="onion" />
       <Order /> */}
-      <Profile />
+      {/* <Profile /> */}
+      {/* <Hook /> */}
+      <Hookchangedeverytime />
+
+      {/* <UserMap /> */}
     </div>
   );
 };
